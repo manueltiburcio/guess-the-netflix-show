@@ -9,5 +9,13 @@ html {
 
 body {
   font-family: "Poppins", "Roboto", sans-serif;
-  color: #222;
+  background-color: #000000;
+}
+
+.title {
+  color: #db0000;
+}
+
+.quiz {
+  background-color: #564d4d;
 }
