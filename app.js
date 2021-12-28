@@ -13,6 +13,8 @@ form.addEventListener('submit', e => {
     userAnswers.forEach((answer, index) => {
         if(answer === correctAnswers[index]){
             score += 10;
+        } else if (answer != correctAnswers[index]){
+            form.querySelector("label").textContent += `the correct answer is ${correctAnswers[index]}`;
         }
     });
 
@@ -32,7 +34,7 @@ form.addEventListener('submit', e => {
         } else {
             output++;
         }
-    }, 100);
+    }, 70);
  
 
 });
